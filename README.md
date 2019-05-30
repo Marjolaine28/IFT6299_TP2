@@ -7,7 +7,7 @@ Exemple : seq_corrections --k=[12,13] --files=[R1.fastq,R2.fastq] returns 4 file
 ## spectrum_plotting.py :
 Plots a spectrum of k-mers before and after the correction.
 
-Exemple : 
+Exemple : spectrum_plotting.py --k=13 
 
 ## stat_plotting.py :
 Plots the statitics of correction (number of distinct k-mers before/after correction, number of correction).
