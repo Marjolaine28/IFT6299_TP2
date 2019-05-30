@@ -48,9 +48,9 @@ def spectrum(k,corrected = False):
 	occ = list(filter(lambda o: o != 0, occ))
 	counter = Counter(occ)
 	if corrected :
-		np.save('./spectra_corrected_'+str(k)+'-mers.npy',list(counter.items()))
+		np.save('./spectrum_corrected_'+str(k)+'-mers.npy',list(counter.items()))
 	else :
-		np.save('./spectra_'+str(k)+'-mers.npy',list(counter.items()))
+		np.save('./spectrum_'+str(k)+'-mers.npy',list(counter.items()))
 	return len(occ)
 
 def first_min_max(spectrum_file,k):
